@@ -1,0 +1,11 @@
+.object-component{
+    background-color: aliceblue;
+    border-radius: 10px;
+    width: fit-content;
+
+    padding: 10px;
+    margin: 10px;
+
+    text-align: left;
+    color: red;
+}
