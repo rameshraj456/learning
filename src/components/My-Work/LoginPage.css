@@ -1,0 +1,43 @@
+body{
+    background-color: rgb(255, 255, 255);   
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+input{
+    width: 70%;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+h2{
+    font-size: 16px;
+}
+
+
+.loginPage{
+    width: fit-content;
+    background-color: rgb(112, 245, 245);
+    padding: 30px;
+    height: fit-content;
+    font-size: 16px;
+}
+
+button{
+    margin-top: 20px;
+    width: fit-content;
+    color: aliceblue;
+    background-color: rgb(56, 192, 56);
+    border:none;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+button:hover{
+    background-color: rgb(22, 149, 22);
+}

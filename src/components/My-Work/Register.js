@@ -21,7 +21,7 @@ function Register() {
       
       <div className='container'>
 
-        <div className='col'>
+        <div className='col' style={{padding:'40px'}}>
             <form >
                 <label>Passenger Name </label>
                 <input type='text'  placeholder='name'   onChange={(e) => setForm(prevData => ({...prevData,name:e.target.value}))}/>
@@ -35,14 +35,23 @@ function Register() {
                 <label>Journey Date</label>
                 <input type='date' placeholder='date' onChange={(e) => setForm(prevData=>({...prevData,date:e.target.value}))}/>
                 <br />
+
+                <label>Class</label>
+
+                <select onchage ={(e) => setForm(prevData => ({...prevData,select:e.target.value}))}>
+                    <option>sleeper</option>
+                    <option> AC</option>
+                    <option>General</option>
+                </select>
                 
                 <button onClick={(e) => bookTicket(e)}>Book Ticket</button>
             </form>
 
         </div>
         <div className='col'>
-            <div style={{display:"flex",justifyContent:"space-around",flexWrap:"wrap",padding:'20px' , margin:'30px' }}>
-                <h1>Passengers Details</h1>
+        <h1>Passengers Details</h1>
+            <div style={{display:"flex",justifyContent:"space-around",flexWrap:"wrap",padding:'20px' , margin:'30px'  }}>
+                
                     {
                     passengers.map(passenger => <Passenger data={passenger}/>)
                     }
@@ -56,12 +65,13 @@ function Register() {
 
 
 function Passenger({data}){
-    return  <div   className='passenger-card ' >  
-                <p>{`passenger name:${data.name}`}</p>
-                <p>{`email:${data.email}`}</p>
-                <p>{`train Number:${data.trainNumber}`}</p>
-                <p>{`journey Date:${data.date}`}</p>
-                
+    return  <div   className='passenger-card 'style={{ padding:'20px',margin:'10px' ,paddingLeft:'40px',width:'100%' ,textAlign:'left',
+        background:' rgb(111, 181, 242)'}} >  
+                <p>{`passenger name : ${data.name}`}</p>
+                <p>{`email : ${data.email}`}</p>
+                <p>{`Train Number : ${data.trainNumber}`}</p>
+                <p>{`journey Date : ${data.date}`}</p>
+                <p>{`Class :  ${data.select}`}</p>
             </div>
 
 }

@@ -2,11 +2,11 @@
 import './App.css';
 import ArrayComp from './components/ArrayComp';
 import ArrayObjects from './components/ArrayObjects';
-import Login from './components/My-Work/LoginLogin';
 import Login2 from './components/Login2';
 import ObjectComp from './components/ObjectComp';
-import LoginPage from './components/My-Work/LoginPage';
 
+import Register from './components/My-Work/Register';
+import LoginPage from './components/My-Work/LoginPage';
 
 
 function App() {
@@ -27,11 +27,23 @@ function App() {
     {/* <h1>Login form</h1>
     <Login/> */}
 
-    <h1>Register form</h1>
-    <Login2/>
+    {/* <h1>Register form</h1>
+    <Login2/> */}
     
-      {/* Ticket Boooking
-    <Register /> */}
+     {/* Ticket Booking */}
+
+     {/* <h1>Train Ticket Booking</h1> */}
+   
+     {/* <Register /> */}
+
+      {/* 
+     Login PageDemo Workout */} 
+   
+     <LoginPage />
+
+
+  
+
 
     </div>
   );
