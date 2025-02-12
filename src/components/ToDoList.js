@@ -20,7 +20,7 @@ function ToDoList() {
         {
           ['' , 'todo' , 'fetch' , 'counter' , 'conditional' , 'image-show']
           .map( item => <li
-                          onClick={ () => navigate(`${item}`)}
+                          onClick={ () => navigate(`/${item}`)}
                           style={{cursor:"pointer"}}
                           > {item}</li>)
         }

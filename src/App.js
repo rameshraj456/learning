@@ -7,6 +7,7 @@ import Counter from './components/Counter';
 import ImageShowHide from './components/ImageShowHide';
 import ImageSideBar from './components/ImageSideBar';
 import { createBrowserRouter, Outlet, RouterProvider, useNavigate } from 'react-router-dom';
+import ProfileList from './components/Profile/ProfileList';
 
 function App() {
   // installation command = npm i react-router-dom
@@ -59,7 +60,9 @@ function App() {
       {/* <ImageShowHide/> */}
       {/* <ImageSideBar /> */}
       
-      <RouterProvider router={router} />
+      {/* <RouterProvider router={router} /> */}
+{/* 
+      <ProfileList /> */}
     </div>
   );
 }
